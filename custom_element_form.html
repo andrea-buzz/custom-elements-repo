@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>PHP Custom Element Form Builder</title>
+        <script src="./custom-form-1.js?v=0123456789"></script>
+        <style>
+        body {
+                font-family: sans-serif;
+                font-size: 16px;
+                margin: 0;
+                color: #333;
+            }
+            custom-form-1 > form {
+                display: flex;
+                flex-direction: column;
+            }
+            code {
+                display: block;
+                max-width: 100%;
+                overflow: hidden;
+            }
+            @media screen and (min-width: 992px){
+                custom-form-1 > form {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }   
+            }
+        </style>
+    </head>
+    <body>
+        <custom-form-1 action="" method="post" enctype="multipart/form-data" 
+        data-fields="[{&quot;tagname&quot;:&quot;input&quot;,&quot;type&quot;:&quot;text&quot;,&quot;name&quot;:&quot;first-name&quot;,&quot;placeholder&quot;:&quot;il tuo nome&quot;,&quot;value&quot;:&quot;&quot;,&quot;label&quot;:&quot;Nome&quot;,&quot;required&quot;:true,&quot;error&quot;:&quot;Il campo \&quot;Nome\&quot; deve essere compilato correttamente.&quot;,&quot;valid&quot;:true},{&quot;tagname&quot;:&quot;input&quot;,&quot;type&quot;:&quot;text&quot;,&quot;name&quot;:&quot;last-name&quot;,&quot;placeholder&quot;:&quot;il tuo cognome&quot;,&quot;value&quot;:&quot;&quot;,&quot;label&quot;:&quot;Cognome&quot;,&quot;required&quot;:true,&quot;error&quot;:&quot;Il campo \&quot;Cognome\&quot; deve essere compilato correttamente.&quot;,&quot;valid&quot;:true},{&quot;tagname&quot;:&quot;input&quot;,&quot;type&quot;:&quot;date&quot;,&quot;name&quot;:&quot;birth-date&quot;,&quot;placeholder&quot;:&quot;gg\/mm\/aaaa&quot;,&quot;value&quot;:&quot;&quot;,&quot;label&quot;:&quot;Data di nascita&quot;,&quot;required&quot;:true,&quot;error&quot;:&quot;Il campo \&quot;Data di nascita\&quot; deve essere una data valida.&quot;,&quot;valid&quot;:true},{&quot;tagname&quot;:&quot;select&quot;,&quot;name&quot;:&quot;week-day[]&quot;,&quot;value&quot;:&quot;&quot;,&quot;label&quot;:&quot;Giorno della settimana&quot;,&quot;required&quot;:false,&quot;multiple&quot;:true,&quot;options&quot;:[{&quot;value&quot;:&quot;&quot;,&quot;text&quot;:&quot;Selezionare il giorno&quot;},{&quot;value&quot;:&quot;lun&quot;,&quot;text&quot;:&quot;Luned\u00ec&quot;},{&quot;value&quot;:&quot;mar&quot;,&quot;text&quot;:&quot;Marted\u00ec&quot;},{&quot;value&quot;:&quot;mer&quot;,&quot;text&quot;:&quot;Mercoled\u00ec&quot;},{&quot;value&quot;:&quot;gio&quot;,&quot;text&quot;:&quot;Gioved\u00ec&quot;},{&quot;value&quot;:&quot;ven&quot;,&quot;text&quot;:&quot;Venerd\u00ec&quot;},{&quot;value&quot;:&quot;sab&quot;,&quot;text&quot;:&quot;Sabato&quot;},{&quot;value&quot;:&quot;dom&quot;,&quot;text&quot;:&quot;Domenica&quot;}],&quot;error&quot;:&quot;Selezionare ua voce nel campo \&quot;Giorno della settimana\&quot;.&quot;,&quot;valid&quot;:true},{&quot;tagname&quot;:&quot;input&quot;,&quot;type&quot;:&quot;file&quot;,&quot;name&quot;:&quot;attachment1&quot;,&quot;value&quot;:null,&quot;label&quot;:&quot;Carica un file&quot;,&quot;required&quot;:true,&quot;error&quot;:&quot;Il File non \u00e8 stato caricato.&quot;,&quot;valid&quot;:true},{&quot;tagname&quot;:&quot;textarea&quot;,&quot;name&quot;:&quot;message&quot;,&quot;value&quot;:&quot;&quot;,&quot;label&quot;:&quot;Messaggio&quot;,&quot;required&quot;:true,&quot;error&quot;:&quot;Il campo \&quot;Messaggio\&quot; deve essere compilato.&quot;,&quot;valid&quot;:true,&quot;0&quot;:true}]">
+        </custom-form-1>
+        <div>
+            This static page is for demonstration only, the form action is not implemented.
+        </div>
+    </body>
+</html>
